@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moon-libration"
+version = "0.1.0"
+description = "A physically faithful animation of the Moon's longitudinal libration"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.1", "pillow>=11"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+moon-libration = "moon_libration.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

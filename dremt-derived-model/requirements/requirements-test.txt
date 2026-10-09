@@ -1,0 +1,2 @@
+-r requirements-animation.txt
+pytest>=8

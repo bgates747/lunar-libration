@@ -1,0 +1,12 @@
+{
+  "start": "2026-09-01 00:00 TDB",
+  "stop": "2026-09-29 00:00 TDB",
+  "samples": "Hourly, 673 samples including initial epoch",
+  "coordinate_frame": "ICRF equatorial axes; geometric Earth-centered vectors",
+  "orbit_acceptance": "Maximum position-vector error <= 0.001 times the reference mean Earth-Moon distance",
+  "orientation_acceptance": "Maximum geocentric sub-Earth longitude and latitude errors <= 1 degree each",
+  "initialization": "Only first-epoch Moon and Sun state vectors, first-epoch Moon pole and sub-Earth longitude, plus independently specified mean sidereal rotation period. Later reference samples are used only for validation.",
+  "parameter_fitting": "No fitting of force parameters, rotation rate, or initial states to later samples",
+  "numerical_check": "Repeat three-body propagation at half the RK4 timestep and report the maximum difference",
+  "scope": "One-month hindcast, not a spacecraft navigation ephemeris or a derivation of tidal capture"
+}
